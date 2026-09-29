@@ -1,0 +1,38 @@
+*{box-sizing:border-box}
+:root{--blue:#6ca7d9;--light:#eef8ff;--pink:#f7b7d5;--ink:#263746}
+body{margin:0;min-height:100vh;background:repeating-linear-gradient(0deg,#f4b1d0 0 13px,#ef9fc3 13px 18px);font-family:Arial,sans-serif;color:var(--ink);display:flex;align-items:center;justify-content:center;padding:20px;overflow:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 10% 15%,#fff8 0 2px,transparent 3px),radial-gradient(circle at 90% 25%,#fff8 0 2px,transparent 3px),radial-gradient(circle at 20% 80%,#fff8 0 2px,transparent 3px);background-size:100px 100px,140px 140px,170px 170px;pointer-events:none}
+.book{width:min(92vw,440px);height:min(86vh,700px);position:relative;perspective:1200px}
+.page{position:absolute;inset:0;background:var(--light);border:5px solid #fff;border-radius:22px;box-shadow:0 14px 35px #8b477755;padding:42px 30px 58px;overflow:auto;opacity:0;transform:rotateY(-12deg) scale(.96);pointer-events:none;transition:.55s ease}
+.page.active{opacity:1;transform:none;pointer-events:auto}
+.cover,.final{text-align:center;background:linear-gradient(145deg,#eaf7ff,#fff)}
+.bunny{font-size:55px;margin-top:5px}
+.tiny,.label,.hint,.note{font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+.label{color:#5d91bc;font-weight:800}
+h1{font-size:48px;line-height:.98;margin:22px 0 12px;color:#427da9}
+h1 span{color:#e58ab6}
+h2{font-size:30px;line-height:1.05;margin:16px 0 22px}
+.subtitle{font-size:20px;font-weight:700}
+button{border:0;border-radius:999px;padding:14px 22px;background:#6ca7d9;color:white;font-weight:800;cursor:pointer;box-shadow:0 6px 14px #467ba544}
+.cover button{margin:18px 0 5px}
+.hint{color:#7790a1}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.photo{aspect-ratio:1;border-radius:14px;border:3px dashed #9ec8e7;display:flex;align-items:center;justify-content:center;text-align:center;color:#6d9abc;background:white;font-size:11px;font-weight:800}
+.note{color:#7f93a2;text-transform:none;letter-spacing:0;text-align:center;margin-top:15px}
+.letter{background:#fff;border-radius:18px;padding:22px;line-height:1.65;box-shadow:0 7px 18px #6292aa22}
+.handwritten{font-style:italic}
+.sticker{font-size:75px;text-align:right;color:#ef9fc3}
+.love-list{margin:0;padding-left:27px;line-height:1.8;font-size:15px}
+.love-list li::marker{color:#e38ab4;font-weight:bold}
+.music-card{text-align:center;background:white;border-radius:22px;padding:25px;box-shadow:0 7px 18px #6292aa22}
+.disc{width:105px;height:105px;border-radius:50%;margin:auto;background:repeating-radial-gradient(circle,#6ca7d9 0 5px,#b9def5 6px 9px);display:grid;place-items:center;color:white;font-size:45px}
+audio{width:100%;margin-top:12px}
+.final-note{font-size:16px;line-height:1.6}
+.hearts{font-size:25px;color:#e58ab6;letter-spacing:7px;margin-top:30px}
+.controls{position:fixed;bottom:15px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:16px;background:#ffffffdd;padding:7px 10px;border-radius:999px;backdrop-filter:blur(8px);box-shadow:0 8px 25px #0002;z-index:10}
+.controls button{width:40px;height:40px;padding:0;font-size:28px;line-height:1}
+#counter{font-size:12px;font-weight:800;min-width:45px;text-align:center}
+@media(max-height:650px){.book{height:78vh}.page{padding-top:28px}h1{font-size:38px}h2{font-size:25px}.bunny{font-size:42px}}
+
+.real-photo{width:100%;height:100%;object-fit:cover;display:block;border:0;padding:0}
+.photo-grid .real-photo{aspect-ratio:1;border-radius:14px}

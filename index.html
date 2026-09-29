@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Little World 💙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+
+  <main class="book" id="book">
+    <section class="page active cover">
+      <div class="bunny">🐰</div>
+      <p class="tiny">A little website made just for you</p>
+      <h1>Our Little<br><span>World</span> 💙</h1>
+      <p class="subtitle">Happy 4 Years</p>
+      <button onclick="nextPage()">OPEN YOUR GIFT 💌</button>
+      <p class="hint">tap to begin</p>
+    </section>
+
+    <section class="page">
+      <p class="label">01 · OUR MEMORIES</p>
+      <h2>Little moments,<br>big memories 📸</h2>
+      <div class="photo-grid">
+        <img class="photo real-photo" src="photo1.jpg" alt="Memory 1">
+        <img class="photo real-photo" src="photo2.jpg" alt="Memory 2">
+        <img class="photo real-photo" src="photo3.jpg" alt="Memory 3">
+        <img class="photo real-photo" src="photo4.jpg" alt="Memory 4">
+        <img class="photo real-photo" src="photo5.jpg" alt="Memory 5">
+        <img class="photo real-photo" src="photo6.jpg" alt="Memory 6">
+        <img class="photo real-photo" src="photo7.jpg" alt="Memory 7">
+      </div>
+      <p class="note">Seven little memories, all in one place. 💙</p>
+    </section>
+
+    <section class="page">
+      <p class="label">02 · ABOUT US</p>
+      <h2>Us, in a few words 💕</h2>
+      <div class="letter">
+        <p>Some people become a beautiful part of your life without you even realizing how important they will become.</p>
+        <p>And somehow, four years later, here we are — with memories, silly moments, little arguments, laughter and so many reasons to smile.</p>
+        <p>Thank you for being a part of my story. 🤍</p>
+      </div>
+      <div class="sticker">♡</div>
+    </section>
+
+    <section class="page">
+      <p class="label">03 · THINGS I LOVE</p>
+      <h2>10 little things<br>I love about you</h2>
+      <ol class="love-list">
+        <li>Your smile</li><li>The way you make me laugh</li><li>Your little habits</li><li>Your kindness</li><li>Your hugs</li>
+        <li>The way you care</li><li>Our random conversations</li><li>Our memories</li><li>Being myself with you</li><li>Simply… you. 💙</li>
+      </ol>
+    </section>
+
+    <section class="page">
+      <p class="label">04 · A LITTLE LETTER</p>
+      <h2>For you 💌</h2>
+      <div class="letter handwritten">
+        <p>Dear you,</p>
+        <p>I don't always know how to put everything I feel into words, but I hope this tiny website reminds you how special you are to me.</p>
+        <p>Here's to all the memories we've made and all the little moments still waiting for us.</p>
+        <p>With love, always. 🌷</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <p class="label">05 · OUR SONG</p>
+      <h2>Press play 🎵</h2>
+      <div class="music-card">
+        <div class="disc">♪</div>
+        <h3>Our Song</h3>
+        <p>Add your song file as <b>song.mp3</b> in this folder.</p>
+        <audio id="audio" controls>
+          <source src="song.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <p class="note">For a copyrighted song, use an audio file you have the right to use.</p>
+    </section>
+
+    <section class="page final">
+      <div class="bunny">🌷🐰🌷</div>
+      <p class="tiny">and finally...</p>
+      <h1>Happy 4 Years<br><span>babee</span> ❤️</h1>
+      <p class="final-note">Thank you for being one of my favorite chapters. Here's to us. ✨</p>
+      <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+    </section>
+  </main>
+
+  <nav class="controls">
+    <button id="back" onclick="prevPage()" aria-label="Previous page">‹</button>
+    <span id="counter">1 / 7</span>
+    <button id="next" onclick="nextPage()" aria-label="Next page">›</button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
